@@ -2,8 +2,9 @@ name: learn-github-actions
 on: [push]
 jobs:
   add-code:
-    uses: actions/checkout@v2
-    run: echo "Code added"
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "Code added"
   compile:
     runs-on: fedora:35
     uses: wichitastateCS211/compilation_action@v1
