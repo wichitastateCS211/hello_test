@@ -3,10 +3,6 @@ on: [push]
 jobs:
   add-code:
     steps:
-      - uses: actions/checkout@v2
-      - run: echo "Code added"
-  compile:
-    runs-on: fedora:35
-    uses: wichitastateCS211/compilation_action@v1
-    with:
-      file-to-build: 'hello.cpp'
+      - name: Check out code
+      uses: actions/checkout@v2
+      - run: echo "${{ github.repository }} has been cloned."
