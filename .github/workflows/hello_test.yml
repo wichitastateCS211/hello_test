@@ -2,6 +2,7 @@ name: learn-github-actions
 on: [push]
 jobs:
   add-code:
+    runs-on: fedora:35
     steps:
       - name: Check out code
       uses: actions/checkout@v2
