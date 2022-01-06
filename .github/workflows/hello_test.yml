@@ -1,0 +1,9 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  compile:
+    runs-on: fedora:35
+    uses: wichitastateCS211/compilation_action@v1
+    steps:
+      - run: clang++ *.cpp
+      - run: ./a.out
