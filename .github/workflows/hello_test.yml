@@ -7,7 +7,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
       - name: List files
-        run: ls -alh && pwd
+        run: ls -alh
       - name: Compile Code
-        run: ./.github/scripts/compile_script.sh
+        run: ./.github/scripts/compile_script.sh "${pwd}"
         shell: bash
