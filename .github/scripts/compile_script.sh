@@ -2,7 +2,7 @@
 
 shopt -s nullglob
 
-cppFiles=(*.cpp)
+cppFiles=(../../*.cpp)
 code="${cppFiles[0]}"
 if [[ -f code ]]; then
     clang++12 -stdlib=libc++ -Wall -Wextra -std=c++17 "$code" -o submission
