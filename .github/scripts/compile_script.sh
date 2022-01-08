@@ -2,8 +2,8 @@
 
 shopt -s nullglob
 
-codePath=@1
-echo "$codePath"
+codePath=$1
+echo "${codePath}"
 cppFiles=("$codePath"/*.cpp)
 code="${cppFiles[0]}"
 if [[ -f code ]]; then
