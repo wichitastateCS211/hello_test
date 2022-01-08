@@ -9,3 +9,4 @@ jobs:
       - run: echo "${{ github.repository }} has been cloned."
       - name: Compile Code
         run: ./.github/sripts/compile_script.sh
+        shell: bash
