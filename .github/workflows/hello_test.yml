@@ -7,3 +7,5 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
       - run: echo "${{ github.repository }} has been cloned."
+      - name: Compile Code
+        run: compile_script.sh
